@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TODO_Android</string>
+    <string name="tasks_text">Tasks</string>
+    <string name="first_task">This is your first Task!</string>
+    <string name="title">Title</string>
+    <string name="description">Describe your Task</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="confirm">Confirm</string>
+    <string name="add">Add</string>
+</resources>

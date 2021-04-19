@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="18dp"
+            android:clickable="true"
+            android:translationX="10dp"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/calendarChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            app:chipIcon="@drawable/ic_baseline_calendar_today_24"
+            android:maxWidth="120dp"/>
+
+        <TextView
+            android:id="@+id/DescriptionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendarChip"
+            android:text="This is description of the task"
+            android:textSize="18sp"
+            android:maxWidth="180dp"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/isDoneCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end|center"
+            android:layoutDirection="rtl"
+            android:text="@string/first_task"
+            android:textSize="20sp"
+            android:maxWidth="150dp"
+            android:layout_toEndOf="@id/calendarChip"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
